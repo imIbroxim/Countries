@@ -40,6 +40,8 @@
     --bg-main:#f2f2f2;
     --text-color:#111517;
     --placeholder-color:#848484;
+    --hover-text:#3ca4d8;
+    --bg-btn:#b8aeae;
 
 }
 
@@ -64,6 +66,8 @@ html {
     --bg-main:#202c36;
     --text-color:#fff;
     --placeholder-color:#fff;
+    --hover-text:rgb(207, 158, 158);
+    --bg-btn:#3f5668;
 }
 body {
     display: flex;
@@ -238,6 +242,13 @@ svg path {
     line-height: 26px;
     color:var(--text-color);
     text-decoration: none;
+    transition: opacity .4s ease, color .4s ease;
+}
+.flag-card__link:hover {
+    color: var(--hover-text);
+}
+.flag-card__link:active {
+    opacity: 0.6;
 }
 .flag-card__dl {
     margin: 0;
@@ -282,6 +293,10 @@ svg path {
     line-height: 20px;
     text-decoration: none;
 }
+.btn-back:hover {
+    background-color:var(--bg-btn);
+}
+
 
 .btn-back svg {
     display: block;
